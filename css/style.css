@@ -4,12 +4,52 @@
     margin: 0;
     padding: 0;
 }
+
+.container{
+    width: 70%;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
 /* --- /COMMONS --- */
 
 
 
 /* +++ HEADER +++ */
+header .container{
+    height: 80px;
+    width: 100vw;
+    line-height: 80px;
+}
 
+header #logo, header #start{
+    width: 10%;
+    text-align: center;
+}
+
+header nav{
+    width: 80%;
+}
+
+header nav ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
 /* --- /HEADER --- */
 
 
@@ -25,4 +65,19 @@
 
 
 /* +++ DEBUG +++ */
+header.debug{
+    background-color: pink;
+}
+
+header.debug #logo{
+    background-color: violet;
+}
+
+header.debug nav{
+    background-color: deeppink;
+}
+
+header.debug #start{
+    background-color: purple;
+}
 /* --- /DEBUG --- */
