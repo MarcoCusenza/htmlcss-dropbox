@@ -4,10 +4,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+
+    /* DA FIXARE --> DIMENSIONE DEL CONTAINER SEZIONE AZIENDE */
+    overflow-x: hidden;
 }
 
 .container{
-    width: 70%;
+    width: 67%;
     margin: auto;
 }
 
@@ -117,7 +120,7 @@ header nav a:hover{
 }
 /* --- /HEADER --- */
 
-/* Jumbotron */
+/* +++ JUMBOTRON +++ */
 #jumbo{
     background-color: rgb(184, 222, 253);
 }
@@ -159,13 +162,27 @@ header nav a:hover{
     right:0;
     top:50%;
 }
-/* /Jumbotron */
+/* --- /JUMBOTRON --- */
 
 
 /* +++ MAIN +++ */
 /* Main Commons */
 main{
     font-size: 15px;
+}
+
+a.normal-link{
+    color: rgb(0, 75, 236);
+}
+
+a.normal-link:visited{
+    color: rgb(39, 118, 245);
+}
+
+hr{
+    width: 20%;
+    color: lightgray;
+    margin: 30px 0 30px 0;
 }
 /* /Main Commons */
 
@@ -235,11 +252,7 @@ main{
 }
 
 #piani #popolari .colonna:nth-of-type(2){
-    margin: 30px 60px; /*Perché con 75px la terza colonna scala sotto?*/
-}
-
-#piani #popolari .corpo{
-    /* padding: 40px 5px; */
+    margin: 30px 60px;
 }
 
 #piani #popolari .corpo .prezzo strong::after{
@@ -260,20 +273,6 @@ main{
     width: 100%;
     margin: 50px 0 20px 0;
     font-weight: 500;
-}
-
-#piani #popolari .corpo a.normal{
-    color: rgb(39, 118, 245);
-}
-
-#piani #popolari .corpo a.normal:visited{
-    color: rgb(39, 118, 245);
-}
-
-#piani #popolari .corpo hr{
-    width: 20%;
-    color: lightgray;
-    margin: 30px 0 30px 0;
 }
 
 #piani #popolari .corpo ul li{
@@ -360,10 +359,94 @@ main{
 /* --- /SEZIONE OPERAZIONI --- */
 
 /* +++ SEZIONE AZIENDE +++ */
-#aziende .box{
+
+/* Aziende Top */
+#aziende-top .box{
     width: 50%;
-    padding-top: 120px;
+    padding-top: 80px;
 }
+/* /Aziende Top */
+
+/* Aziende Body */
+#aziende-body.container{
+    width: 100vw;
+    margin-top: 50px;
+}
+
+#aziende-body .box-lato{
+    width: 30vw;
+}
+
+#aziende-body .logobox{
+    width: 15vw;
+    height: 15vw;
+    position: relative;
+}
+
+#aziende-body .box-lato img{
+    width: 50%;
+    filter: invert(100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#aziende-body .box-lato:first-of-type .logobox:nth-of-type(1){
+    background-color: rgb(176, 221, 156);
+    border: .6vw solid rgb(226, 255, 214);
+}
+
+#aziende-body .box-lato:first-of-type .logobox:nth-of-type(2){
+    background-color: rgb(82, 39, 46);
+}
+
+#aziende-body .box-lato:first-of-type .logobox:nth-of-type(3){
+    background-color: rgb(66, 160, 223);
+}
+
+#aziende-body .box-lato:first-of-type .logobox:nth-of-type(4){
+    background-color: rgb(238, 71, 41);
+}
+
+#aziende-body .box-lato:last-of-type .logobox:nth-of-type(1){
+    background-color: rgb(189, 44, 18);
+}
+
+#aziende-body .box-lato:last-of-type .logobox:nth-of-type(2){
+    background-color: rgb(172, 199, 218);
+}
+
+#aziende-body .box-lato:last-of-type .logobox:nth-of-type(3){
+    background-color: rgb(41, 55, 133);
+}
+
+#aziende-body .box-lato:last-of-type .logobox:nth-of-type(4){
+    background-color: rgb(235, 203, 60);
+}
+
+#aziende-body .box-centro{
+    max-width: 40vw;
+    height: 30vw;
+    padding: 3%;
+    background-color: rgb(246, 246, 246);
+}
+
+#aziende-body .box-centro img{
+    width: 30%;
+}
+
+#aziende-body .box-centro hr{
+    width: 10%;
+    color: rgb(243, 243, 243);
+}
+
+#aziende-body p{
+    line-height: 25px;
+    padding: 15px 0 25px 0;
+}
+/* /Aziende Body */
+
 /* --- /SEZIONE AZIENDE --- */
 
 /* --- /MAIN --- */
@@ -373,7 +456,11 @@ main{
 /* --- /FOOTER --- */
 
 
+
+
+/* --------------------------------------------------- */
 /* +++ DEBUG +++ */
+
 
 /* HEADER */
 /* header.debug{
@@ -423,7 +510,7 @@ header.debug #start{
 /* /PIANI */
 
 /* OPERAZIONI */
-.debug #operazioni .container{
+/* .debug #operazioni .container{
     background-color: lightgrey;
 }
 
@@ -433,7 +520,17 @@ header.debug #start{
 
 .debug #operazioni .card:nth-of-type(odd){
     background-color: deepskyblue;
-}
+} */
 /* /OPERAZIONI */
+
+/* AZIENDE */
+.debug #aziende-body .logobox:nth-of-type(2), .debug #aziende-body .logobox:nth-of-type(3){
+    background-color: deeppink;
+}
+
+.debug #aziende-body .logobox:nth-of-type(1), .debug #aziende-body .logobox:nth-of-type(4){
+    background-color: deepskyblue;
+}
+/* /AZIENDE */
 
 /* --- /DEBUG --- */
