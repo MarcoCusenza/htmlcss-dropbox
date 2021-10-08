@@ -230,7 +230,7 @@ main{
 
 /* Popolari */
 #piani #popolari .colonna{
-    height: 1000px;
+    min-height: 1000px;
     width: calc((100% - 120px) / 3);
 }
 
@@ -315,10 +315,6 @@ main{
     width: 50%;
 }
 
-#partner img{
-    width: 100%;
-}
-
 #partner .box:last-of-type{
     width: 45%;
     padding-top: 40px;
@@ -330,6 +326,14 @@ main{
     background-color: white;
     border: 2px solid grey;
 }
+
+#partner img{
+    width: 100%;
+}
+
+#partner p{
+    line-height: 30px;
+}
 /* --- /SEZIONE PARTNER --- */
 
 /* +++ SEZIONE OPERAZIONI +++ */
@@ -338,15 +342,20 @@ main{
 }
 
 #operazioni .card{
-    width: calc((100% - 60px) / 3 );
+    width: calc((100% - 120px) / 3);
+    margin-bottom: 80px;
 }
 
 #operazioni .card:nth-of-type(2), #operazioni .card:nth-of-type(5){
-    margin: 0 30px;
+    margin: 0 60px;
 }
 
 #operazioni img{
     width: 100%;
+}
+
+#operazioni p{
+    line-height: 25px;
 }
 
 
