@@ -40,6 +40,23 @@
 .btn:hover{
     color: lightgray;
 }
+
+
+h2{
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 60px;
+}
+
+h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size: 16px;
+}
 /* --- /COMMONS --- */
 
 
@@ -119,6 +136,7 @@ header nav a:hover{
 
 #jumbo p{
     width: 28%;
+    font-size: 16px;
     font-weight: 500;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -145,7 +163,6 @@ header nav a:hover{
 
 
 /* +++ MAIN +++ */
-
 /* Main Commons */
 main{
     font-size: 15px;
@@ -153,7 +170,6 @@ main{
 /* /Main Commons */
 
 /* +++ SEZIONE PIANI +++ */
-
 /* Piani Commons */
 #piani .colonna{
     margin-top: 30px;
@@ -162,12 +178,6 @@ main{
 
 #piani .container{
     font-weight: 500;
-}
-
-#piani h2{
-    font-size: 45px;
-    font-weight: 700;
-    margin-bottom: 60px;
 }
 
 #piani .titolo{
@@ -182,9 +192,8 @@ main{
     vertical-align: middle;
 }
 
-#piani .corpo h3{
-    font-size: 28px;
-    margin-bottom: 25px;
+#piani .corpo{
+    padding: 30px;
 }
 
 #piani .corpo .icona, #piani .corpo .testo{
@@ -229,9 +238,8 @@ main{
     margin: 30px 60px; /*Perché con 75px la terza colonna scala sotto?*/
 }
 
-#piani #popolari .corpo .container{
-    width: 85%;
-    margin-top: 40px;
+#piani #popolari .corpo{
+    /* padding: 40px 5px; */
 }
 
 #piani #popolari .corpo .prezzo strong::after{
@@ -280,10 +288,6 @@ main{
 /* / Popolari */
 
 /* Enterprise */
-#enterprise .corpo{
-    padding: 30px 5%;
-}
-
 #enterprise .corpo .box:first-of-type{
     width: calc((75%));
 }
@@ -302,20 +306,64 @@ main{
 /* /Enterprise */
 /* --- /SEZIONE PIANI --- */
 
-/* Sezione Partner */
-/* /Sezione Partner */
+/* +++ SEZIONE PARTNER +++ */
+#partner{
+    padding-top: 150px;
+}
+
+#partner .box{
+    width: 50%;
+}
+
+#partner img{
+    width: 100%;
+}
+
+#partner .box:last-of-type{
+    width: 45%;
+    padding-top: 40px;
+}
+
+#partner .box .btn{
+    margin-top: 25px;
+    color: black;
+    background-color: white;
+    border: 2px solid grey;
+}
+/* --- /SEZIONE PARTNER --- */
+
+/* +++ SEZIONE OPERAZIONI +++ */
+#operazioni .container{
+    padding-top: 80px;
+}
+
+#operazioni .card{
+    width: calc((100% - 60px) / 3 );
+}
+
+#operazioni .card:nth-of-type(2), #operazioni .card:nth-of-type(5){
+    margin: 0 30px;
+}
+
+#operazioni img{
+    width: 100%;
+}
+
+
+
+/* --- /SEZIONE OPERAZIONI --- */
 
 /* --- /MAIN --- */
-
 
 
 /* +++ FOOTER +++ */
 /* --- /FOOTER --- */
 
 
-
 /* +++ DEBUG +++ */
-header.debug{
+
+/* HEADER */
+/* header.debug{
     background-color: pink;
 }
 
@@ -329,9 +377,11 @@ header.debug nav{
 
 header.debug #start{
     background-color: purple;
-}
+} */
+/* /HEADER */
 
-.debug #piani .container{
+/* PIANI */
+/* .debug #piani .container{
     background-color: deeppink;
 }
 
@@ -356,5 +406,21 @@ header.debug #start{
 }
 .debug .box:last-of-type{
     background-color: lightpink;
+} */
+/* /PIANI */
+
+/* OPERAZIONI */
+.debug #operazioni .container{
+    background-color: lightgrey;
 }
+
+.debug #operazioni .card:nth-of-type(even){
+    background-color: deeppink;
+}
+
+.debug #operazioni .card:nth-of-type(odd){
+    background-color: deepskyblue;
+}
+/* /OPERAZIONI */
+
 /* --- /DEBUG --- */
