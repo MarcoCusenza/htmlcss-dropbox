@@ -357,10 +357,14 @@ main{
 #operazioni p{
     line-height: 25px;
 }
-
-
-
 /* --- /SEZIONE OPERAZIONI --- */
+
+/* +++ SEZIONE AZIENDE +++ */
+#aziende .box{
+    width: 50%;
+    padding-top: 120px;
+}
+/* --- /SEZIONE AZIENDE --- */
 
 /* --- /MAIN --- */
 
