@@ -34,6 +34,7 @@
     background-color: rgb(39, 118, 245);
     padding: 5px 30px;
     vertical-align: middle;
+    text-align: center;
 }
 
 .btn:hover{
@@ -99,10 +100,6 @@ header nav a:hover{
 }
 /* --- /HEADER --- */
 
-
-
-/* +++ MAIN +++ */
-
 /* Jumbotron */
 #jumbo{
     background-color: rgb(184, 222, 253);
@@ -147,9 +144,17 @@ header nav a:hover{
 /* /Jumbotron */
 
 
-/* Sezione piani */
+/* +++ MAIN +++ */
 
-/* Sezione piani Commons */
+/* Main Commons */
+main{
+    font-size: 15px;
+}
+/* /Main Commons */
+
+/* +++ SEZIONE PIANI +++ */
+
+/* Piani Commons */
 #piani .colonna{
     margin-top: 30px;
     border: 2px solid lightgrey;
@@ -158,34 +163,11 @@ header nav a:hover{
 #piani .container{
     font-weight: 500;
 }
-/* /Sezione piani Commons */
-
-#piani>.container{
-    padding-top: 200px;
-}
 
 #piani h2{
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 60px;
-}
-
-#piani #intro [type='radio']{
-    transform: scale(1.5);
-    margin: 0 5px 0 3px;
-}
-
-#piani #intro span{
-    margin-right: 20px;
-}
-
-#piani #popolari .colonna{
-    height: 1000px;
-    width: calc((100% - 120px) / 3);
-}
-
-#piani #popolari .colonna:nth-of-type(2){
-    margin: 30px 60px; /*Perché con 75px la terza colonna scala sotto?*/
 }
 
 #piani .titolo{
@@ -200,33 +182,9 @@ header nav a:hover{
     vertical-align: middle;
 }
 
-#piani .corpo{
-    font-size: 15px;
-}
-
-#piani #popolari .corpo .container{
-    width: 85%;
-    margin-top: 40px;
-}
-
-#piani #popolari .corpo h3{
+#piani .corpo h3{
     font-size: 28px;
     margin-bottom: 25px;
-}
-
-#piani #popolari .corpo .prezzo{
-    font-size: 20px;
-}
-
-#piani #popolari .corpo .prezzo strong::after{
-    content:"\20AC";
-}
-
-#piani #popolari .corpo .periodo{
-    margin: 10px 0 50px 0;
-    font-size: 15px;
-    color: gray;
-
 }
 
 #piani .corpo .icona, #piani .corpo .testo{
@@ -241,52 +199,111 @@ header nav a:hover{
     width: 90%;
 }
 
-#piani .corpo .archiviazione{
+#piani .corpo .prezzo{
+    font-size: 20px;
+}
+/* /Sezione piani Commons */
+
+/* Intro */
+#piani>.container{
+    padding-top: 200px;
+}
+
+#piani #intro [type='radio']{
+    transform: scale(1.5);
+    margin: 0 5px 0 3px;
+}
+
+#piani #intro span{
+    margin-right: 20px;
+}
+/* / Intro */
+
+/* Popolari */
+#piani #popolari .colonna{
+    height: 1000px;
+    width: calc((100% - 120px) / 3);
+}
+
+#piani #popolari .colonna:nth-of-type(2){
+    margin: 30px 60px; /*Perché con 75px la terza colonna scala sotto?*/
+}
+
+#piani #popolari .corpo .container{
+    width: 85%;
+    margin-top: 40px;
+}
+
+#piani #popolari .corpo .prezzo strong::after{
+    content:"\20AC";
+}
+
+#piani #popolari .corpo .periodo{
+    margin: 10px 0 50px 0;
+    font-size: 15px;
+    color: gray;
+}
+
+#piani #popolari .corpo .archiviazione{
     margin: 25px 0 25px 0;
 }
 
-#piani .corpo .btn{
+#piani #popolari .corpo .btn{
     width: 100%;
     margin: 50px 0 20px 0;
-    text-align: center;
     font-weight: 500;
 }
 
-#piani .corpo a.normal{
+#piani #popolari .corpo a.normal{
     color: rgb(39, 118, 245);
 }
 
-#piani .corpo a.normal:visited{
+#piani #popolari .corpo a.normal:visited{
     color: rgb(39, 118, 245);
 }
 
-#piani .corpo hr{
+#piani #popolari .corpo hr{
     width: 20%;
     color: lightgray;
     margin: 30px 0 30px 0;
 }
 
-#piani .corpo ul li{
+#piani #popolari .corpo ul li{
     margin-top: 30px;
     margin-left: 20px;
 }
 
-#piani .corpo ul li::marker{
+#piani #popolari .corpo ul li::marker{
     content:"\2714  ";
     color: rgb(39, 118, 245);
 }
+/* / Popolari */
 
+/* Enterprise */
 #enterprise .corpo{
-    padding: 30px 20px;
+    padding: 30px 5%;
 }
 
 #enterprise .corpo .box:first-of-type{
-    width: calc((60%));
+    width: calc((75%));
 }
+
 #enterprise .corpo .box:last-of-type{
-    width: calc((30%));
+    width: calc((25%));
 }
-/* /Sezione piani */
+
+#enterprise .btn{
+    width: 100%;
+}
+
+#enterprise p{
+    margin-top: 20px;
+}
+/* /Enterprise */
+/* --- /SEZIONE PIANI --- */
+
+/* Sezione Partner */
+/* /Sezione Partner */
 
 /* --- /MAIN --- */
 
@@ -334,10 +351,10 @@ header.debug #start{
     background-color: purple;
 }
 
-.debug #enterprise .box:first-of-type{
+.debug .box:first-of-type{
     background-color: lightyellow;
 }
-.debug #enterprise .box:last-of-type{
+.debug .box:last-of-type{
     background-color: lightpink;
 }
 /* --- /DEBUG --- */
