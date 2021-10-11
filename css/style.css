@@ -44,7 +44,7 @@
 
 .btn:hover{
     background-color: rgb(25, 82, 173);
-    transition: 1s;
+    transition: 1.2s;
 }
 
 
@@ -73,6 +73,8 @@ header{
     width: 100%;
     background-color: white;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 
@@ -87,8 +89,7 @@ header nav li{
 }
 
 header nav li:hover{
-    border-bottom: 2px solid grey;
-    margin-bottom: -2px;
+    border-bottom: 2px solid rgb(180, 180, 180);
 }
 
 header nav.left li:first-of-type, header nav.right li:last-of-type{
@@ -96,7 +97,7 @@ header nav.left li:first-of-type, header nav.right li:last-of-type{
 }
 
 header nav a{
-    line-height: 80px;
+    line-height: 78px;
     color: black;
     font-size: 17px;
     text-decoration: none;
