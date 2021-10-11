@@ -69,6 +69,7 @@ p{
 
 /* +++ HEADER +++ */
 header{
+    height: 80px;
     width: 100%;
     background-color: white;
     position: fixed;
@@ -111,6 +112,7 @@ header nav.left img{
 }
 /* +++ /HEADER +++ */
 
+
 /* +++ JUMBOTRON +++ */
 #jumbo{
     background-color: rgb(184, 222, 253);
@@ -135,7 +137,7 @@ header nav.left img{
     margin-bottom: 30px;
 }
 
-#jumbo .container div:first-of-type{
+#jumbo div:first-of-type{
     font-weight: 600;
     font-size: 14px;
     margin-top: 12px;
