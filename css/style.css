@@ -43,7 +43,8 @@
 }
 
 .btn:hover{
-    color: lightgray;
+    background-color: rgb(25, 82, 173);
+    transition: 1s;
 }
 
 
@@ -68,7 +69,6 @@ p{
 
 /* +++ HEADER +++ */
 header{
-    line-height: 80px;
     width: 100%;
     background-color: white;
     position: fixed;
@@ -85,26 +85,29 @@ header nav li{
     margin: 0 20px;
 }
 
-header a{
+header nav li:hover{
+    border-bottom: 2px solid grey;
+    margin-bottom: -2px;
+}
+
+header nav.left li:first-of-type, header nav.right li:last-of-type{
+    border:none;
+}
+
+header nav a{
+    line-height: 80px;
+    color: black;
+    font-size: 17px;
     text-decoration: none;
     font-weight: 500;
 }
 
-header nav a{
-    color: black;
-    font-size: 17px;
-}
-
-header nav.left a{
-    line-height: 80px;
+header nav a:hover{
+    text-decoration: none;
 }
 
 header nav.left img{
     vertical-align: text-bottom;
-}
-
-header nav a:hover{
-    text-decoration: underline;
 }
 /* +++ /HEADER +++ */
 
