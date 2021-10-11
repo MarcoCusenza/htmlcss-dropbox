@@ -4,9 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-
-    /* DA FIXARE --> DIMENSIONE DEL CONTAINER SEZIONE AZIENDE */
-    overflow-x: hidden;
 }
 
 .container{
@@ -60,7 +57,7 @@ h3{
 p{
     font-size: 16px;
 }
-/* --- /COMMONS --- */
+/* +++ /COMMONS +++ */
 
 
 
@@ -118,7 +115,7 @@ header nav a{
 header nav a:hover{
     text-decoration: underline;
 }
-/* --- /HEADER --- */
+/* +++ /HEADER +++ */
 
 /* +++ JUMBOTRON +++ */
 #jumbo{
@@ -162,7 +159,7 @@ header nav a:hover{
     right:0;
     top:50%;
 }
-/* --- /JUMBOTRON --- */
+/* +++ /JUMBOTRON +++ */
 
 
 /* +++ MAIN +++ */
@@ -303,7 +300,7 @@ hr{
     margin-top: 20px;
 }
 /* /Enterprise */
-/* --- /SEZIONE PIANI --- */
+/* +++ /SEZIONE PIANI +++ */
 
 /* +++ SEZIONE PARTNER +++ */
 #partner{
@@ -333,7 +330,7 @@ hr{
 #partner p{
     line-height: 30px;
 }
-/* --- /SEZIONE PARTNER --- */
+/* +++ /SEZIONE PARTNER +++ */
 
 /* +++ SEZIONE OPERAZIONI +++ */
 #operazioni .container{
@@ -356,7 +353,7 @@ hr{
 #operazioni p{
     line-height: 25px;
 }
-/* --- /SEZIONE OPERAZIONI --- */
+/* +++ /SEZIONE OPERAZIONI +++ */
 
 /* +++ SEZIONE AZIENDE +++ */
 
@@ -369,7 +366,7 @@ hr{
 
 /* Aziende Body */
 #aziende-body.container{
-    width: 100vw;
+    width: 100%;
     margin-top: 50px;
 }
 
@@ -426,7 +423,7 @@ hr{
 }
 
 #aziende-body .box-centro{
-    max-width: 40vw;
+    max-width: calc(100% - 60vw);
     height: 30vw;
     padding: 3%;
     background-color: rgb(246, 246, 246);
@@ -447,18 +444,36 @@ hr{
 }
 /* /Aziende Body */
 
-/* --- /SEZIONE AZIENDE --- */
+/* Aziende Bottom */
+#aziende-bottom{
+    padding-top: 100px;
+}
 
-/* --- /MAIN --- */
+#aziende-bottom .box:first-of-type{
+    width: 70%;
+    margin-right: 80px;
+}
+
+#aziende-bottom .testo{
+    width: 70%;
+}
+
+#aziende-bottom .box:last-of-type{
+    width: 30%;
+}
+/* /Aziende Bottom */
+/* +++ /SEZIONE AZIENDE +++ */
+
+/* +++ /MAIN +++ */
 
 
 /* +++ FOOTER +++ */
-/* --- /FOOTER --- */
+/* +++ /FOOTER +++ */
 
 
 
 
-/* --------------------------------------------------- */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++ DEBUG +++ */
 
 
@@ -524,13 +539,33 @@ header.debug #start{
 /* /OPERAZIONI */
 
 /* AZIENDE */
+/* .debug #aziende-body{
+    background-color: rgb(255, 195, 227);
+}
+
+.debug #aziende-body.container{
+    background-color: black;
+}
+
+.debug #aziende-body .box-lato{
+    background-color: red;
+}
+
+.debug #aziende-body .box-centro{
+    background-color: rgb(246, 246, 246);
+}
+
 .debug #aziende-body .logobox:nth-of-type(2), .debug #aziende-body .logobox:nth-of-type(3){
-    background-color: deeppink;
+    background-color: rgb(255, 20, 147);
 }
 
 .debug #aziende-body .logobox:nth-of-type(1), .debug #aziende-body .logobox:nth-of-type(4){
     background-color: deepskyblue;
 }
+
+.debug #aziende-bottom{
+    background-color: purple;
+} */
 /* /AZIENDE */
 
-/* --- /DEBUG --- */
+/* +++ /DEBUG +++ */
