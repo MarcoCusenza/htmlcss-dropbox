@@ -69,27 +69,10 @@ p{
 /* +++ HEADER +++ */
 header{
     line-height: 80px;
-}
-
-header .container{
-    width: 100vw;
+    width: 100%;
+    background-color: white;
     position: fixed;
     z-index: 1;
-    background-color: white;
-}
-
-header #logo, header #start{
-    width: 10%;
-    text-align: center;
-}
-
-header #logo img{
-    vertical-align: middle;
-}
-
-header nav{
-    width: 80%;
-    text-align: center;
 }
 
 header nav ul{
@@ -99,12 +82,7 @@ header nav ul{
 
 header nav li{
     display: inline-block;
-    margin: 0 1.5%;
-    vertical-align: middle;
-}
-
-header nav li:nth-of-type(3){
-    margin-right: 33%;
+    margin: 0 20px;
 }
 
 header a{
@@ -115,6 +93,14 @@ header a{
 header nav a{
     color: black;
     font-size: 17px;
+}
+
+header nav.left a{
+    line-height: 80px;
+}
+
+header nav.left img{
+    vertical-align: text-bottom;
 }
 
 header nav a:hover{
@@ -556,7 +542,6 @@ footer .lingua i:last-of-type{
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++ DEBUG +++ */
 
-
 /* HEADER */
 /* header.debug{
     background-color: pink;
@@ -647,9 +632,5 @@ header.debug #start{
     background-color: purple;
 } */
 /* /AZIENDE */
-
-/*FOOTER*/
-
-/* /FOOTER */
 
 /* +++ /DEBUG +++ */
