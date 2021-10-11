@@ -11,6 +11,11 @@
     margin: auto;
 }
 
+.container-big{
+    width: 78%;
+    margin: auto;
+}
+
 .clearfix::after{
     content: "";
     display: table;
@@ -122,8 +127,7 @@ header nav a:hover{
     background-color: rgb(184, 222, 253);
 }
 
-#jumbo .container{
-    width: 78%;
+#jumbo .container-big{
     padding: 160px 0 130px 0;
     position: relative;
 }
@@ -488,12 +492,32 @@ hr{
     font-weight: bold;
     margin-right: 42%;
 }
-
 /* +++ /SEZIONE FAQ +++ */
 /* +++ /MAIN +++ */
 
 
 /* +++ FOOTER +++ */
+footer{
+    background-color: black;
+}
+
+footer .container-big{
+    padding: 160px 0 100px 0;
+}
+
+footer .box{
+    width: calc(60% / 5);
+    margin-right: 8%;
+}
+
+footer h4, footer li{
+    color: white;
+}
+
+footer h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
 /* +++ /FOOTER +++ */
 
 
@@ -593,5 +617,9 @@ header.debug #start{
     background-color: purple;
 } */
 /* /AZIENDE */
+
+/*FOOTER*/
+
+/* /FOOTER */
 
 /* +++ /DEBUG +++ */
