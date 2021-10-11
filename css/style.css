@@ -475,7 +475,19 @@ hr{
 
 
 /* +++ SEZIONE FAQ +++ */
+#faq .container{
+    padding: 100px 0;
+}
 
+#faq hr{
+    width: 100%;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+#faq .row span:first-of-type{
+    font-weight: bold;
+    margin-right: 42%;
+}
 
 /* +++ /SEZIONE FAQ +++ */
 /* +++ /MAIN +++ */
