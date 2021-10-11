@@ -7,7 +7,7 @@
 }
 
 .container{
-    width: 67%;
+    width: 68%;
     margin: auto;
 }
 
@@ -447,23 +447,37 @@ hr{
 /* Aziende Bottom */
 #aziende-bottom{
     padding-top: 100px;
+    width: 100%;
+    background-color: rgb(184, 222, 253);
 }
 
 #aziende-bottom .box:first-of-type{
-    width: 70%;
-    margin-right: 80px;
+    width: 50%;
+    margin-right: 250px;
 }
 
-#aziende-bottom .testo{
-    width: 70%;
+#aziende-bottom h2{
+    color: rgb(85, 7, 33);
 }
 
 #aziende-bottom .box:last-of-type{
-    width: 30%;
+    width: 27%;
 }
+
+#aziende-bottom .btn{
+    width: 100%;
+    color: rgb(41, 41, 41);
+    background-color: white;
+}
+
 /* /Aziende Bottom */
 /* +++ /SEZIONE AZIENDE +++ */
 
+
+/* +++ SEZIONE FAQ +++ */
+
+
+/* +++ /SEZIONE FAQ +++ */
 /* +++ /MAIN +++ */
 
 
